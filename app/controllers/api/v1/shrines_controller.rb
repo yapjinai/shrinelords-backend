@@ -10,6 +10,16 @@ class Api::V1::ShrinesController < ApplicationController
     render json: @Shrine
   end
 
+  def create
+    @Shrine = Shrine.new(shrine_params)
+    if @Shrine.save
+      render json: @Shrine, status: :ok
+    else
+      @Shrines = Shrine.all
+      render json: @Shrines, status: :error
+    end
+  end
+
   def update
     @Shrine = Shrine.find_by(id: params[:id])
     @Shrine.update_attributes(shrine_params)

@@ -16,6 +16,7 @@ class Api::V1::OfferingsController < ApplicationController
 
   private
   def offering_params
-    params.require([:item_id, :style])
+    params.require([:shrine_id, :item_id, :style])
+  end
 
 end
