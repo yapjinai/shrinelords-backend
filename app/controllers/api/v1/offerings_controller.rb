@@ -10,5 +10,12 @@ class Api::V1::OfferingsController < ApplicationController
     render json: @Offering, status: :ok
   end
 
+  def update
+    @Offering = Offering.find_by(id: params[:id])
+  end
+
+  private
+  def offering_params
+    params.require([:item_id, :style])
 
 end
