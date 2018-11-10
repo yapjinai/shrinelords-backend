@@ -88,16 +88,16 @@ i6 = Item.create(
 o1 = Offering.create(
   shrine: s1,
   item: i1,
-  style: '{"style":{"top":"20%","left":"50%"}}'
+  style: '{"top":"20%","left":"50%"}'
 )
 
 o2 = Offering.create(
   shrine: s1,
   item: i2,
-  style: '{"style":{"top":"20%","left":"50%"}}'
+  style: '{"top":"20%","left":"50%"}'
 )
 o3 = Offering.create(
   shrine: s1,
   item: i3,
-  style: '{"style":{"top":"60%","left":"10%"}}'
+  style: '{"top":"60%","left":"10%"}'
 )
