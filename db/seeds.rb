@@ -13,91 +13,157 @@
 # )
 
 Door.delete_all
-Shrine.delete_all
+# Shrine.delete_all
 Item.delete_all
 User.delete_all
 Offering.delete_all
 Back.delete_all
 
 u1 = User.create(
-  name: "The Ubiquitous Sean Para",
-  password: "seanpara",
-  avatar: "https://ca.slack-edge.com/T02MD9XTF-UCD89E1T5-d95a13a8ed69-48",
-  birthday: "May 27, 1994"
+  name: 'The Ubiquitous Sean Para',
+  password: 'seanpara',
+  avatar: 'https://ca.slack-edge.com/T02MD9XTF-UCD89E1T5-d95a13a8ed69-48',
+  birthday: 'May 27, 1994'
 )
 
 d1 = Door.create(
-  name: "default",
-  closed_img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Closed_door_02.jpg/800px-Closed_door_02.jpg",
-  open_img: "http://www.handballtunisie.org/upload/2018/03/05/grand-open-double-doors-open-double-doors-obobkebumennewsco-gateways-open-doors-open-double-doors-l-d535fd5360b651d9.jpg"
+  name: 'default',
+  closed_img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Closed_door_02.jpg/800px-Closed_door_02.jpg',
+  open_img: 'http://www.handballtunisie.org/upload/2018/03/05/grand-open-double-doors-open-double-doors-obobkebumennewsco-gateways-open-doors-open-double-doors-l-d535fd5360b651d9.jpg'
 )
 d2 = Door.create(
-  name: "cabinet",
-  closed_img: "https://www.graindesigns.com/wp-content/uploads/2017/02/Custom-Wood-Printer-Stand-with-Sliding-Doors-Closed.jpg",
-  open_img: "https://www.graindesigns.com/wp-content/uploads/2017/02/Custom-Wood-Printer-Stand-with-Sliding-Doors-Open.jpg"
+  name: 'cabinet',
+  closed_img: 'https://www.graindesigns.com/wp-content/uploads/2017/02/Custom-Wood-Printer-Stand-with-Sliding-Doors-Closed.jpg',
+  open_img: 'https://www.graindesigns.com/wp-content/uploads/2017/02/Custom-Wood-Printer-Stand-with-Sliding-Doors-Open.jpg'
 )
 d3 = Door.create(
-  name: "japanese",
-  closed_img: "https://img.alicdn.com/imgextra/i1/1906043003/TB22RmauORnpuFjSZFCXXX2DXXa_!!1906043003.jpg",
-  open_img: "https://c.pxhere.com/photos/3e/87/japan_Japanese_ryokan_sliding_doors_tatami_floors_window-1106912.jpg!d"
+  name: 'japanese',
+  closed_img: 'https://img.alicdn.com/imgextra/i1/1906043003/TB22RmauORnpuFjSZFCXXX2DXXa_!!1906043003.jpg',
+  open_img: 'https://c.pxhere.com/photos/3e/87/japan_Japanese_ryokan_sliding_doors_tatami_floors_window-1106912.jpg!d'
 )
 
 b1 = Back.create(
-  name: "default",
-  video: "https://www.youtube.com/watch?v=S0bk3eAPMKk"
+  name: 'default',
+  video: 'https://www.youtube.com/watch?v=S0bk3eAPMKk'
 )
 b2 = Back.create(
-  name: "water",
-  video: "./assets/video/sparkling_ocean_waves.mp4"
+  name: 'water',
+  video: './assets/video/sparkling_ocean_waves.mp4'
 )
 
-s1 = Shrine.create(
-  user: u1,
-  door: d1,
-  back: b1,
-  name: "default",
-  views: 0,
-  idle_views: 0
-)
+# s1 = Shrine.create(
+#   user: u1,
+#   door: d1,
+#   back: b1,
+#   name: 'default',
+#   views: 0,
+#   idle_views: 0
+# )
+s1 = Shrine.all.first
 
+# i0 = Item.create(
+#   name: 'candle-flame',
+#   image: 'https://i.imgur.com/GgrHPm7.gif'#,
+  # style: '{"maxWidth":"50px"}'
+# )
 i1 = Item.create(
-  name: "dark candelabra",
-  image: "https://modishstore.imgix.net/s/files/1/0236/1829/products/Roost-Dark-Driftwood-Candelabra_-Horizontal.jpg?v=1495590131&auto=compress,format&w=1200&"
+  name: 'goblet-01',
+  image: 'https://i.imgur.com/5vf9bBb.png'#,
+  # style: '{"maxWidth":"200px"}'
 )
 i2 = Item.create(
-  name: "flower",
-  image: "https://i.imgur.com/80awuFg.png"
+  name: 'flower-01',
+  image: 'https://i.imgur.com/80awuFg.png'#,
+  # style: '{"maxWidth":"150px"}'
 )
 i3 = Item.create(
-  name: "virgin mary candle",
-  image: "https://i.imgur.com/Ud0CZhY.pnghttps://i.imgur.com/Ud0CZhY.png"
+  name: 'candle-saint',
+  image: 'https://i.imgur.com/Ud0CZhY.pnghttps://i.imgur.com/Ud0CZhY.png'#,
+  # style: '{"maxWidth":"150px"}'
 )
 i4 = Item.create(
-  name: "basic candle",
-  image: "https://i.imgur.com/l4jclFo.png"
-)
-i5 = Item.create(
-  name: "candle flame gif",
-  image: "https://i.imgur.com/GgrHPm7.gif"
+  name: 'candle-01',
+  image: 'https://i.imgur.com/l4jclFo.png'#,
+  # style: '{"maxWidth":"150px"}'
 )
 i6 = Item.create(
-  name: "incense",
-  image: "https://i.imgur.com/DOacUuy.png"
+  name: 'incense-01',
+  image: 'https://i.imgur.com/DOacUuy.png'#,
+  # style: '{"maxWidth":"400px"}'
 )
+i7 = Item.create(
+  name: 'skull-cat',
+  image: 'https://i.imgur.com/QXXZjRT.png'#,
+  # style: '{"maxWidth":"150px"}'
+)
+i8 = Item.create(
+  name: 'cards-tarot',
+  image: './assets/img/cards-tarot.png'#,
+  # style: '{"maxWidth":"450px"}'
+)
+i9 = Item.create(
+  name: 'cat-01',
+  image: './assets/img/cat-01.png'#,
+  # style: '{"maxWidth":"500px"}'
+)
+i10 = Item.create(
+  name: 'cat-02',
+  image: './assets/img/cat-02.png'#,
+  # style: '{"maxWidth":"500px"}'
+)
+# i8 = Item.create(
+#   name: '',
+#   image: ''#,
+  # style: '{"maxWidth":"50px"}'
+# )
+# i8 = Item.create(
+#   name: '',
+#   image: ''#,
+  # style: '{"maxWidth":"50px"}'
+# )
 
-o1 = Offering.create(
+# o1 = Offering.create(
+#   shrine: s1,
+#   item: i1,
+#   style: '{"top":"30%","left":"0%"}'
+# )
+# o2 = Offering.create(
+#   shrine: s1,
+#   item: i2,
+#   style: '{"top":"30%","left":"10%"}'
+# )
+# o3 = Offering.create(
+#   shrine: s1,
+#   item: i3,
+#   style: '{"top":"30%","left":"20%"}'
+# )
+# o4 = Offering.create(
+#   shrine: s1,
+#   item: i4,
+#   style: '{"top":"30%","left":"30%"}'
+# )
+# o6 = Offering.create(
+#   shrine: s1,
+#   item: i6,
+#   style: '{"top":"30%","left":"40%"}'
+# )
+o7 = Offering.create(
   shrine: s1,
-  item: i1,
-  style: '{"top":"20%","left":"50%"}'
+  item: i7,
+  style: '{"top":"30%","left":"50%"}'
 )
-
-o2 = Offering.create(
+# o8 = Offering.create(
+#   shrine: s1,
+#   item: i8,
+#   style: '{"top":"30%","left":"60%"}'
+# )
+# o9 = Offering.create(
+#   shrine: s1,
+#   item: i9,
+#   style: '{"top":"30%","left":"70%"}'
+# )
+o10 = Offering.create(
   shrine: s1,
-  item: i2,
-  style: '{"top":"20%","left":"50%"}'
-)
-o3 = Offering.create(
-  shrine: s1,
-  item: i3,
-  style: '{"top":"60%","left":"10%"}'
+  item: i10,
+  style: '{"top":"30%","left":"80%"}'
 )
