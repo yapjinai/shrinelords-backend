@@ -61,107 +61,93 @@ b2 = Back.create(
 # )
 s1 = Shrine.all.first
 
-# i0 = Item.create(
-#   name: 'candle-flame',
-#   image: 'https://i.imgur.com/GgrHPm7.gif'#,
-  # style: '{"maxWidth":"50px"}'
-# )
+#######################################################
 i1 = Item.create(
   name: 'goblet-01',
-  image: 'https://i.imgur.com/5vf9bBb.png'#,
-  # style: '{"maxWidth":"200px"}'
+  image: 'https://i.imgur.com/5vf9bBb.png',
+  size: 200
 )
 i2 = Item.create(
   name: 'flower-01',
-  image: 'https://i.imgur.com/80awuFg.png'#,
-  # style: '{"maxWidth":"150px"}'
+  image: 'https://i.imgur.com/80awuFg.png',
+  size: 150
 )
 i3 = Item.create(
   name: 'candle-saint',
-  image: 'https://i.imgur.com/Ud0CZhY.pnghttps://i.imgur.com/Ud0CZhY.png'#,
-  # style: '{"maxWidth":"150px"}'
+  image: 'https://i.imgur.com/Ud0CZhY.pnghttps://i.imgur.com/Ud0CZhY.png',
+  size: 150
 )
 i4 = Item.create(
   name: 'candle-01',
-  image: 'https://i.imgur.com/l4jclFo.png'#,
-  # style: '{"maxWidth":"150px"}'
+  image: 'https://i.imgur.com/l4jclFo.png',
+  size: 150
 )
 i6 = Item.create(
   name: 'incense-01',
-  image: 'https://i.imgur.com/DOacUuy.png'#,
-  # style: '{"maxWidth":"400px"}'
+  image: 'https://i.imgur.com/DOacUuy.png',
+  size: 400
 )
 i7 = Item.create(
   name: 'skull-cat',
-  image: 'https://i.imgur.com/QXXZjRT.png'#,
-  # style: '{"maxWidth":"150px"}'
+  image: 'https://i.imgur.com/QXXZjRT.png',
+  size: 150
 )
 i8 = Item.create(
   name: 'cards-tarot',
-  image: './assets/img/cards-tarot.png'#,
-  # style: '{"maxWidth":"450px"}'
+  image: './assets/img/cards-tarot.png',
+  size: 450
 )
 i9 = Item.create(
   name: 'cat-01',
-  image: './assets/img/cat-01.png'#,
-  # style: '{"maxWidth":"500px"}'
+  image: './assets/img/cat-01.png',
+  size: 500
 )
 i10 = Item.create(
   name: 'cat-02',
-  image: './assets/img/cat-02.png'#,
-  # style: '{"maxWidth":"500px"}'
+  image: './assets/img/cat-02.png',
+  size: 500
 )
-# i8 = Item.create(
-#   name: '',
-#   image: ''#,
-  # style: '{"maxWidth":"50px"}'
-# )
-# i8 = Item.create(
-#   name: '',
-#   image: ''#,
-  # style: '{"maxWidth":"50px"}'
-# )
-
-# o1 = Offering.create(
-#   shrine: s1,
-#   item: i1,
-#   style: '{"top":"30%","left":"0%"}'
-# )
-# o2 = Offering.create(
-#   shrine: s1,
-#   item: i2,
-#   style: '{"top":"30%","left":"10%"}'
-# )
-# o3 = Offering.create(
-#   shrine: s1,
-#   item: i3,
-#   style: '{"top":"30%","left":"20%"}'
-# )
-# o4 = Offering.create(
-#   shrine: s1,
-#   item: i4,
-#   style: '{"top":"30%","left":"30%"}'
-# )
-# o6 = Offering.create(
-#   shrine: s1,
-#   item: i6,
-#   style: '{"top":"30%","left":"40%"}'
-# )
+#######################################################
+o1 = Offering.create(
+  shrine: s1,
+  item: i1,
+  style: '{"top":"30%","left":"0%"}'
+)
+o2 = Offering.create(
+  shrine: s1,
+  item: i2,
+  style: '{"top":"30%","left":"10%"}'
+)
+o3 = Offering.create(
+  shrine: s1,
+  item: i3,
+  style: '{"top":"30%","left":"20%"}'
+)
+o4 = Offering.create(
+  shrine: s1,
+  item: i4,
+  style: '{"top":"30%","left":"30%"}'
+)
+o6 = Offering.create(
+  shrine: s1,
+  item: i6,
+  style: '{"top":"30%","left":"40%"}'
+)
 o7 = Offering.create(
   shrine: s1,
   item: i7,
   style: '{"top":"30%","left":"50%"}'
 )
-# o8 = Offering.create(
-#   shrine: s1,
-#   item: i8,
-#   style: '{"top":"30%","left":"60%"}'
-# )
-# o9 = Offering.create(
-#   shrine: s1,
-#   item: i9,
-#   style: '{"top":"30%","left":"70%"}'
-# )
+o8 = Offering.create(
+  shrine: s1,
+  item: i8,
+  style: '{"top":"30%","left":"60%"}'
+)
+o9 = Offering.create(
+  shrine: s1,
+  item: i9,
+  style: '{"top":"30%","left":"70%"}'
+)
 o10 = Offering.create(
   shrine: s1,
   item: i10,
