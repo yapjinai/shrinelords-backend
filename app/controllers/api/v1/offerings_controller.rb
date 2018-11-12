@@ -20,7 +20,6 @@ class Api::V1::OfferingsController < ApplicationController
   end
 
   def update
-    byebug
     @Offering = Offering.find_by(id: params[:id])
     @Offering.update_attributes(offering_params)
     if @Offering.save
@@ -33,7 +32,7 @@ class Api::V1::OfferingsController < ApplicationController
 
   private
   def offering_params
-    params.require([:shrine_id, :item_id, :style])
+    params.require(:offering).permit([:shrine_id, :item_id, :style])
   end
 
 end
