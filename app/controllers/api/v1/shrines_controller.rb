@@ -30,6 +30,11 @@ class Api::V1::ShrinesController < ApplicationController
     end
   end
 
+  def delete
+    @Offering = Offering.find_by(id: params[:id])
+    @Offering.destroy
+  end
+
   private
 
   def shrine_params
