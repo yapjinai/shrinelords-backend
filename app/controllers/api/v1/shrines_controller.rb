@@ -16,7 +16,7 @@ class Api::V1::ShrinesController < ApplicationController
       render json: @Shrine, status: :ok
     else
       @Shrines = Shrine.all
-      render json: @Shrines, status: :error
+      render json: @Shrines, status: :bad_request
     end
   end
 
@@ -26,7 +26,7 @@ class Api::V1::ShrinesController < ApplicationController
     if @Shrine.save
       render json: @Shrine, status: :ok
     else
-      render json: @Shrine, status: :error
+      render json: @Shrine, status: :bad_request
     end
   end
 

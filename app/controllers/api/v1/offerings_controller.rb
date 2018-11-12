@@ -10,8 +10,25 @@ class Api::V1::OfferingsController < ApplicationController
     render json: @Offering, status: :ok
   end
 
+  def create
+    @Offering = Offering.new(offering_params)
+    if @Offering.save
+      render json: @Offering, status: :ok
+    else
+      render json: @Offerings, status: :bad_request
+    end
+  end
+
   def update
+    byebug
     @Offering = Offering.find_by(id: params[:id])
+    @Offering.update_attributes(offering_params)
+    if @Offering.save
+      render json: @Offering, status: :ok
+    else
+      @Offerings = Offering.all
+      render json: @Offerings, status: :bad_request
+    end
   end
 
   private
