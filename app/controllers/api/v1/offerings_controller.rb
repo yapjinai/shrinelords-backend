@@ -11,7 +11,7 @@ class Api::V1::OfferingsController < ApplicationController
   end
 
   def create
-    @Offering = Offering.new(offering_params)
+    @Offering = Offering.new(creation_params)
     if @Offering.save
       render json: @Offering, status: :ok
     else
@@ -32,6 +32,10 @@ class Api::V1::OfferingsController < ApplicationController
 
   private
   def offering_params
+    params.require(:offering).permit([:shrine_id, :item_id, :style])
+  end
+
+  def creation_params
     params.require(:offering).permit([:shrine_id, :item_id, :style])
   end
 
