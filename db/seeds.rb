@@ -65,7 +65,7 @@ s1 = Shrine.all.first
 i1 = Item.create(
   name: 'goblet-01',
   image: 'https://i.imgur.com/5vf9bBb.png',
-  size: 200
+  size: 300
 )
 i2 = Item.create(
   name: 'flower-01',
