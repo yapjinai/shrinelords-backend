@@ -104,9 +104,6 @@ s4 = Shrine.create(
   idle_views: 0
 )
 s1 = Shrine.all.first
-=======
-# s1 = Shrine.all.first
->>>>>>> 4958c72a6a0fb83a7cc5965de48179f22e966e0c
 
 #######################################################
 i1 = Item.create(
