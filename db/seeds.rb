@@ -94,53 +94,53 @@ i6 = Item.create(
 )
 i7 = Item.create(
   name: 'cards-tarot',
-  image: './assets/img/items/cards-tarot.png',
+  image: '../assets/img/items/cards-tarot.png',
   size: 450
 )
 i8 = Item.create(
   name: 'christingle',
-  image: './assets/img/items/christingle.png',
+  image: '../assets/img/items/christingle.png',
   size: 200
 )
 i9 = Item.create(
   name: 'cat-02',
-  image: './assets/img/items/cat-02.png',
+  image: '../assets/img/items/cat-02.png',
   size: 500
 )
 i10 = Item.create(
   name: 'cat-bat',
-  image: './assets/img/items/cat-bat.png',
+  image: '../assets/img/items/cat-bat.png',
   size: 350
 )
 i11 = Item.create(
   name: 'merlin',
-  image: './assets/img/items/merlin.png',
+  image: '../assets/img/items/merlin.png',
   size: 200
 )
 i12 = Item.create(
   name: 'luna',
-  image: './assets/img/items/luna.png',
+  image: '../assets/img/items/luna.png',
   size: 350
 )
 i13 = Item.create(
   name: 'kali',
-  image: './assets/img/items/kali.png',
+  image: '../assets/img/items/kali.png',
   size: 200
 )
 i14 = Item.create(
   name: 'cat-01',
-  image: './assets/img/items/cat-01.png',
+  image: '../assets/img/items/cat-01.png',
   size: 500
 )
 i15 = Item.create(
   name: 'pip',
-  image: './assets/img/items/pip.png',
+  image: '../assets/img/items/pip.png',
   size: 250
 )
 i16 = Item.create(
   name: 'peeby-01',
-  image: './assets/img/items/peeby-01.png',
-  size: 500
+  image: '../assets/img/items/peeby-01.png',
+  size: 300
 )
 #######################################################
 o1 = Offering.create(
