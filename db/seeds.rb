@@ -64,32 +64,32 @@ s1 = Shrine.all.first
 #######################################################
 i1 = Item.create(
   name: 'goblet-01',
-  image: 'https://i.imgur.com/5vf9bBb.png',
+  image: '../assets/img/items/goblet-01.png',
   size: 300
 )
 i2 = Item.create(
   name: 'flower-01',
-  image: 'https://i.imgur.com/80awuFg.png',
+  image: '../assets/img/items/flower-01.png',
   size: 150
 )
 i3 = Item.create(
-  name: 'candle-saint',
-  image: 'https://i.imgur.com/Ud0CZhY.png',
+  name: 'candle-01',
+  image: '../assets/img/items/candle-01.png',
   size: 150
 )
 i4 = Item.create(
-  name: 'candle-01',
-  image: 'https://i.imgur.com/l4jclFo.png',
+  name: 'candle-02',
+  image: '../assets/img/items/candle-02.png',
   size: 150
 )
 i5 = Item.create(
   name: 'incense-01',
-  image: 'https://i.imgur.com/DOacUuy.png',
+  image: '../assets/img/items/incense-01.png',
   size: 400
 )
 i6 = Item.create(
   name: 'skull-cat',
-  image: 'https://i.imgur.com/QXXZjRT.png',
+  image: '../assets/img/items/skull-cat.png',
   size: 150
 )
 i7 = Item.create(
