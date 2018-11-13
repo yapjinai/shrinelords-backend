@@ -13,7 +13,7 @@
 # )
 
 Door.delete_all
-# Shrine.delete_all
+Shrine.delete_all
 Item.delete_all
 User.delete_all
 Offering.delete_all
@@ -59,7 +59,7 @@ s1 = Shrine.create(
   views: 0,
   idle_views: 0
 )
-s1 = Shrine.all.first
+# s1 = Shrine.all.first
 
 #######################################################
 i1 = Item.create(
