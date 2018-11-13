@@ -48,18 +48,65 @@ b1 = Back.create(
 )
 b2 = Back.create(
   name: 'water',
-  video: './assets/video/items/sparkling_ocean_waves.mp4'
+  video: '../assets/video/sparkling_ocean_waves.mp4'
+)
+b3 = Back.create(
+  name: 'waterfall',
+  video: '../assets/video/Cascade - 300.mp4'
+)
+b4 = Back.create(
+  name: 'clouds',
+  video: '../assets/video/clouds_timelapse.mp4'
+)
+b5 = Back.create(
+  name: 'grass',
+  video: '../assets/video/Lake - 4759.mp4'
+)
+b6 = Back.create(
+  name: 'mountain creek',
+  video: '../assets/video/Mountain - 8837.mp4'
+)
+b7 = Back.create(
+  name: 'underwater',
+  video: '../assets/video/Underwater - 5385.mp4'
 )
 
 s1 = Shrine.create(
   user: u1,
   door: d1,
-  back: b1,
+  back: b3,
   name: 'default',
   views: 0,
   idle_views: 0
 )
+s2 = Shrine.create(
+  user: u1,
+  door: d1,
+  back: b7,
+  name: 'underwater',
+  views: 0,
+  idle_views: 0
+)
+s3 = Shrine.create(
+  user: u1,
+  door: d1,
+  back: b6,
+  name: "Your Mom's Shrine",
+  views: 0,
+  idle_views: 0
+)
+s4 = Shrine.create(
+  user: u1,
+  door: d1,
+  back: b5,
+  name: "Sean's Shrine",
+  views: 0,
+  idle_views: 0
+)
+s1 = Shrine.all.first
+=======
 # s1 = Shrine.all.first
+>>>>>>> 4958c72a6a0fb83a7cc5965de48179f22e966e0c
 
 #######################################################
 i1 = Item.create(
