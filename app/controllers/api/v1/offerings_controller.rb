@@ -30,6 +30,11 @@ class Api::V1::OfferingsController < ApplicationController
     end
   end
 
+  def destroy
+    @Offering = Offering.find_by(id: params[:id])
+    @Offering.destroy
+  end
+
   private
   def offering_params
     params.require(:offering).permit([:shrine_id, :item_id, :style])
