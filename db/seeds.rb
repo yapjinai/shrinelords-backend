@@ -51,14 +51,14 @@ b2 = Back.create(
   video: './assets/video/items/sparkling_ocean_waves.mp4'
 )
 
-# s1 = Shrine.create(
-#   user: u1,
-#   door: d1,
-#   back: b1,
-#   name: 'default',
-#   views: 0,
-#   idle_views: 0
-# )
+s1 = Shrine.create(
+  user: u1,
+  door: d1,
+  back: b1,
+  name: 'default',
+  views: 0,
+  idle_views: 0
+)
 s1 = Shrine.all.first
 
 #######################################################
