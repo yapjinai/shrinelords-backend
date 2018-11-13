@@ -176,12 +176,14 @@ o6 = Offering.create(
 o7 = Offering.create(
   shrine: s1,
   item: i7,
-  style: '{"top":"30%","left":"60%"}'
+  style: '{"top":"30%","left":"60%"}',
+  zIndex: 1
 )
 o8 = Offering.create(
   shrine: s1,
   item: i8,
-  style: '{"top":"30%","left":"70%"}'
+  style: '{"top":"30%","left":"70%"}',
+  zIndex: 2
 )
 # o9 = Offering.create(
 #   shrine: s1,
