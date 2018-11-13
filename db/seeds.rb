@@ -140,7 +140,7 @@ i15 = Item.create(
 i16 = Item.create(
   name: 'peeby-01',
   image: './assets/img/items/peeby-01.png',
-  size: 300
+  size: 500
 )
 #######################################################
 o1 = Offering.create(
@@ -183,41 +183,41 @@ o8 = Offering.create(
   item: i8,
   style: '{"top":"30%","left":"70%"}'
 )
-o9 = Offering.create(
-  shrine: s1,
-  item: i9,
-  style: '{"top":"60%","left":"0%"}'
-)
-o10 = Offering.create(
-  shrine: s1,
-  item: i10,
-  style: '{"top":"60%","left":"20%"}'
-)
-o11 = Offering.create(
-  shrine: s1,
-  item: i11,
-  style: '{"top":"60%","left":"30%"}'
-)
-o12 = Offering.create(
-  shrine: s1,
-  item: i12,
-  style: '{"top":"60%","left":"40%"}'
-)
-o13 = Offering.create(
-  shrine: s1,
-  item: i13,
-  style: '{"top":"60%","left":"50%"}'
-)
-o14 = Offering.create(
-  shrine: s1,
-  item: i14,
-  style: '{"top":"60%","left":"60%"}'
-)
-o15 = Offering.create(
-  shrine: s1,
-  item: i15,
-  style: '{"top":"60%","left":"70%"}'
-)
+# o9 = Offering.create(
+#   shrine: s1,
+#   item: i9,
+#   style: '{"top":"60%","left":"0%"}'
+# )
+# o10 = Offering.create(
+#   shrine: s1,
+#   item: i10,
+#   style: '{"top":"60%","left":"20%"}'
+# )
+# o11 = Offering.create(
+#   shrine: s1,
+#   item: i11,
+#   style: '{"top":"60%","left":"30%"}'
+# )
+# o12 = Offering.create(
+#   shrine: s1,
+#   item: i12,
+#   style: '{"top":"60%","left":"40%"}'
+# )
+# o13 = Offering.create(
+#   shrine: s1,
+#   item: i13,
+#   style: '{"top":"60%","left":"50%"}'
+# )
+# o14 = Offering.create(
+#   shrine: s1,
+#   item: i14,
+#   style: '{"top":"60%","left":"60%"}'
+# )
+# o15 = Offering.create(
+#   shrine: s1,
+#   item: i15,
+#   style: '{"top":"60%","left":"70%"}'
+# )
 o16 = Offering.create(
   shrine: s1,
   item: i16,
