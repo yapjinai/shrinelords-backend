@@ -181,7 +181,12 @@ i15 = Item.create(
   image: '../assets/img/items/pip.png',
   size: 250
 )
-i16 = Item.create(
+i17 = Item.create(
+  name: 'fizgig',
+  image: '../assets/img/items/fizgig.png',
+  size: 300
+)
+i100 = Item.create(
   name: 'peeby-01',
   image: '../assets/img/items/peeby-01.png',
   size: 300
@@ -264,8 +269,13 @@ o8 = Offering.create(
 #   item: i15,
 #   style: '{"top":"60%","left":"70%"}'
 # )
-o16 = Offering.create(
+o17 = Offering.create(
   shrine: s1,
-  item: i16,
+  item: i17,
+  style: '{"top":"60%","left":"70%"}'
+)
+o100 = Offering.create(
+  shrine: s1,
+  item: i100,
   style: '{"top":"60%","left":"80%"}'
 )
