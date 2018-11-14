@@ -104,9 +104,6 @@ s4 = Shrine.create(
   idle_views: 0
 )
 s1 = Shrine.all.first
-=======
-# s1 = Shrine.all.first
->>>>>>> 4958c72a6a0fb83a7cc5965de48179f22e966e0c
 
 #######################################################
 i1 = Item.create(
@@ -223,12 +220,14 @@ o6 = Offering.create(
 o7 = Offering.create(
   shrine: s1,
   item: i7,
-  style: '{"top":"30%","left":"60%"}'
+  style: '{"top":"30%","left":"60%"}',
+  zIndex: 1
 )
 o8 = Offering.create(
   shrine: s1,
   item: i8,
-  style: '{"top":"30%","left":"70%"}'
+  style: '{"top":"30%","left":"70%"}',
+  zIndex: 2
 )
 # o9 = Offering.create(
 #   shrine: s1,

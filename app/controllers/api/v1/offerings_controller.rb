@@ -37,11 +37,11 @@ class Api::V1::OfferingsController < ApplicationController
 
   private
   def offering_params
-    params.require(:offering).permit([:shrine_id, :item_id, :style])
+    params.require(:offering).permit([:shrine_id, :item_id, :style, :zIndex])
   end
 
   def creation_params
-    params.require(:offering).permit([:shrine_id, :item_id, :style])
+    params.require(:offering).permit([:shrine_id, :item_id, :style, :zIndex])
   end
 
 end
