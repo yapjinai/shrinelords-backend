@@ -42,10 +42,10 @@ d3 = Door.create(
   open_img: 'https://c.pxhere.com/photos/3e/87/japan_Japanese_ryokan_sliding_doors_tatami_floors_window-1106912.jpg!d'
 )
 
-# b1 = Back.create(
-#   name: 'default',
-#   video: 'https://www.youtube.com/watch?v=S0bk3eAPMKk'
-# )
+b1 = Back.create(
+  name: 'default',
+  video: '../assets/video/bonfire.mp4'
+)
 b2 = Back.create(
   name: 'water',
   video: '../assets/video/sparkling_ocean_waves.mp4'
