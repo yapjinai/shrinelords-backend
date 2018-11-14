@@ -44,7 +44,7 @@ d3 = Door.create(
 
 b1 = Back.create(
   name: 'default',
-  video: 'https://www.youtube.com/watch?v=S0bk3eAPMKk'
+  video: '../assets/video/bonfire.mp4'
 )
 b2 = Back.create(
   name: 'water',
