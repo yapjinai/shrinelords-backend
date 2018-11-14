@@ -42,10 +42,10 @@ d3 = Door.create(
   open_img: 'https://c.pxhere.com/photos/3e/87/japan_Japanese_ryokan_sliding_doors_tatami_floors_window-1106912.jpg!d'
 )
 
-b1 = Back.create(
-  name: 'default',
-  video: 'https://www.youtube.com/watch?v=S0bk3eAPMKk'
-)
+# b1 = Back.create(
+#   name: 'default',
+#   video: 'https://www.youtube.com/watch?v=S0bk3eAPMKk'
+# )
 b2 = Back.create(
   name: 'water',
   video: '../assets/video/sparkling_ocean_waves.mp4'
@@ -74,7 +74,7 @@ b7 = Back.create(
 s1 = Shrine.create(
   user: u1,
   door: d1,
-  back: b3,
+  back: b4,
   name: 'default',
   views: 0,
   idle_views: 0
@@ -82,7 +82,7 @@ s1 = Shrine.create(
 s2 = Shrine.create(
   user: u1,
   door: d1,
-  back: b7,
+  back: b2,
   name: 'underwater',
   views: 0,
   idle_views: 0
@@ -90,7 +90,7 @@ s2 = Shrine.create(
 s3 = Shrine.create(
   user: u1,
   door: d1,
-  back: b6,
+  back: b3,
   name: "Your Mom's Shrine",
   views: 0,
   idle_views: 0
@@ -103,7 +103,7 @@ s4 = Shrine.create(
   views: 0,
   idle_views: 0
 )
-s1 = Shrine.all.first
+# s1 = Shrine.all.first
 
 #######################################################
 i1 = Item.create(
@@ -191,99 +191,32 @@ i18 = Item.create(
   image: '../assets/img/items/percy.png',
   size: 200
 )
+i19 = Item.create(
+  name: 'haku-01',
+  image: '../assets/img/items/haku-01.png',
+  size: 700
+)
+i20 = Item.create(
+  name: 'haku-02',
+  image: '../assets/img/items/haku-02.png',
+  size: 700
+)
+i21 = Item.create(
+  name: 'jack',
+  image: '../assets/img/items/jack.png',
+  size: 700
+)
+i22 = Item.create(
+  name: 'adam',
+  image: '../assets/img/items/adam.png',
+  size: 400
+)
 i100 = Item.create(
   name: 'peeby-01',
   image: '../assets/img/items/peeby-01.png',
   size: 300
 )
 #######################################################
-o1 = Offering.create(
-  shrine: s1,
-  item: i1,
-  style: '{"top":"30%","left":"0%"}'
-)
-o2 = Offering.create(
-  shrine: s1,
-  item: i2,
-  style: '{"top":"30%","left":"10%"}'
-)
-o3 = Offering.create(
-  shrine: s1,
-  item: i3,
-  style: '{"top":"30%","left":"20%"}'
-)
-o4 = Offering.create(
-  shrine: s1,
-  item: i4,
-  style: '{"top":"30%","left":"30%"}'
-)
-o5 = Offering.create(
-  shrine: s1,
-  item: i5,
-  style: '{"top":"30%","left":"40%"}'
-)
-# o6 = Offering.create(
-#   shrine: s1,
-#   item: i6,
-#   style: '{"top":"30%","left":"50%"}'
-# )
-# o7 = Offering.create(
-#   shrine: s1,
-#   item: i7,
-#   style: '{"top":"30%","left":"60%"}',
-#   zIndex: 1
-# )
-# o8 = Offering.create(
-#   shrine: s1,
-#   item: i8,
-#   style: '{"top":"30%","left":"70%"}',
-#   zIndex: 2
-# )
-# o9 = Offering.create(
-#   shrine: s1,
-#   item: i9,
-#   style: '{"top":"60%","left":"0%"}'
-# )
-# o10 = Offering.create(
-#   shrine: s1,
-#   item: i10,
-#   style: '{"top":"60%","left":"20%"}'
-# )
-# o11 = Offering.create(
-#   shrine: s1,
-#   item: i11,
-#   style: '{"top":"60%","left":"30%"}'
-# )
-# o12 = Offering.create(
-#   shrine: s1,
-#   item: i12,
-#   style: '{"top":"60%","left":"40%"}'
-# )
-# o13 = Offering.create(
-#   shrine: s1,
-#   item: i13,
-#   style: '{"top":"60%","left":"50%"}'
-# )
-# o14 = Offering.create(
-#   shrine: s1,
-#   item: i14,
-#   style: '{"top":"60%","left":"60%"}'
-# )
-# o15 = Offering.create(
-#   shrine: s1,
-#   item: i15,
-#   style: '{"top":"60%","left":"70%"}'
-# )
-o17 = Offering.create(
-  shrine: s1,
-  item: i17,
-  style: '{"top":"60%","left":"70%"}'
-)
-o18 = Offering.create(
-  shrine: s1,
-  item: i18,
-  style: '{"top":"60%","left":"70%"}'
-)
 o100 = Offering.create(
   shrine: s1,
   item: i100,
