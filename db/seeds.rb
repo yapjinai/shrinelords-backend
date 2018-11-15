@@ -308,7 +308,7 @@ fruit_01 = Item.create(
 )
 fruit_02 = Item.create(
   name: 'fruit-02',
-  tags: 'fruit oranges chinese asian red',
+  tags: 'fruit food oranges chinese asian red',
   image: '../assets/img/items/fruit-02.png',
   size: 250
 )
