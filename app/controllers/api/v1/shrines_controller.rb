@@ -38,7 +38,7 @@ class Api::V1::ShrinesController < ApplicationController
   private
 
   def shrine_params
-    params.require([:name, :door_id, :back_id])
+    params.require([:name, :back_id])
   end
 
 end

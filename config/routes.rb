@@ -6,7 +6,6 @@ Rails.application.routes.draw do
       resources :offerings
       resources :items
       resources :shrines
-      resources :doors
     end
   end
 end

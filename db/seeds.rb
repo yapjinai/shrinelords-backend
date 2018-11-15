@@ -1,18 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (
-# or created alongside the database with db:setup
-# ).
-#
-# Examples:
-#
-#   movies = Movie.create(
-# [{ name: 'Star Wars' }, { name: 'Lord of the Rings' }]
-# )
-#   Character.create(
-# name: 'Luke', movie: movies.first
-# )
 
-Door.delete_all
 Shrine.delete_all
 Item.delete_all
 User.delete_all
@@ -24,22 +10,6 @@ u1 = User.create(
   password: 'seanpara',
   avatar: 'https://ca.slack-edge.com/T02MD9XTF-UCD89E1T5-d95a13a8ed69-48',
   birthday: 'May 27, 1994'
-)
-
-d1 = Door.create(
-  name: 'default',
-  closed_img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Closed_door_02.jpg/800px-Closed_door_02.jpg',
-  open_img: 'http://www.handballtunisie.org/upload/2018/03/05/grand-open-double-doors-open-double-doors-obobkebumennewsco-gateways-open-doors-open-double-doors-l-d535fd5360b651d9.jpg'
-)
-d2 = Door.create(
-  name: 'cabinet',
-  closed_img: 'https://www.graindesigns.com/wp-content/uploads/2017/02/Custom-Wood-Printer-Stand-with-Sliding-Doors-Closed.jpg',
-  open_img: 'https://www.graindesigns.com/wp-content/uploads/2017/02/Custom-Wood-Printer-Stand-with-Sliding-Doors-Open.jpg'
-)
-d3 = Door.create(
-  name: 'japanese',
-  closed_img: 'https://img.alicdn.com/imgextra/i1/1906043003/TB22RmauORnpuFjSZFCXXX2DXXa_!!1906043003.jpg',
-  open_img: 'https://c.pxhere.com/photos/3e/87/japan_Japanese_ryokan_sliding_doors_tatami_floors_window-1106912.jpg!d'
 )
 
 b1 = Back.create(
@@ -63,7 +33,7 @@ b5 = Back.create(
   video: '../assets/video/Lake - 4759.mp4'
 )
 b6 = Back.create(
-  name: 'mountain creek',
+  name: 'mountain-creek',
   video: '../assets/video/Mountain - 8837.mp4'
 )
 b7 = Back.create(
@@ -73,7 +43,6 @@ b7 = Back.create(
 
 s1 = Shrine.create(
   user: u1,
-  door: d1,
   back: b4,
   name: 'default',
   views: 0,
@@ -81,7 +50,6 @@ s1 = Shrine.create(
 )
 s2 = Shrine.create(
   user: u1,
-  door: d1,
   back: b2,
   name: 'underwater',
   views: 0,
@@ -89,7 +57,6 @@ s2 = Shrine.create(
 )
 s3 = Shrine.create(
   user: u1,
-  door: d1,
   back: b3,
   name: "Your Mom's Shrine",
   views: 0,
@@ -97,128 +64,251 @@ s3 = Shrine.create(
 )
 s4 = Shrine.create(
   user: u1,
-  door: d1,
   back: b5,
   name: "Sean's Shrine",
   views: 0,
   idle_views: 0
 )
-# s1 = Shrine.all.first
 
 #######################################################
-i1 = Item.create(
-  name: 'goblet-01',
-  image: '../assets/img/items/goblet-01.png',
-  size: 300
+
+pet_haku_01 = Item.create(
+  name: 'pet-haku-01',
+  image: '../assets/img/items/pet-haku-01.png',
+  size: 700
 )
-i2 = Item.create(
-  name: 'flower-01',
-  image: '../assets/img/items/flower-01.png',
-  size: 150
-)
-i3 = Item.create(
-  name: 'candle-01',
-  image: '../assets/img/items/candle-01.png',
-  size: 150
-)
-i4 = Item.create(
-  name: 'candle-02',
-  image: '../assets/img/items/candle-02.png',
-  size: 150
-)
-i5 = Item.create(
-  name: 'incense-01',
-  image: '../assets/img/items/incense-01.png',
-  size: 400
-)
-i6 = Item.create(
-  name: 'skull-cat',
-  image: '../assets/img/items/skull-cat.png',
-  size: 150
-)
-i7 = Item.create(
-  name: 'cards-tarot',
-  image: '../assets/img/items/cards-tarot.png',
-  size: 450
-)
-i8 = Item.create(
-  name: 'christingle',
-  image: '../assets/img/items/christingle.png',
-  size: 200
-)
-i9 = Item.create(
-  name: 'cat-02',
-  image: '../assets/img/items/cat-02.png',
+pet_blackjack = Item.create(
+  name: 'pet-blackjack',
+  image: '../assets/img/items/pet-blackjack.png',
   size: 500
 )
-i10 = Item.create(
-  name: 'cat-bat',
-  image: '../assets/img/items/cat-bat.png',
-  size: 350
+pet_haku_02 = Item.create(
+  name: 'pet-haku-02',
+  image: '../assets/img/items/pet-haku-02.png',
+  size: 700
 )
-i11 = Item.create(
-  name: 'merlin',
-  image: '../assets/img/items/merlin.png',
+candle_04 = Item.create(
+  name: 'candle-04',
+  image: '../assets/img/items/candle-04.png',
+  size: 400
+)
+plant_04 = Item.create(
+  name: 'plant-04',
+  image: '../assets/img/items/plant-04.png',
   size: 200
 )
-i12 = Item.create(
-  name: 'luna',
-  image: '../assets/img/items/luna.png',
-  size: 350
-)
-i13 = Item.create(
-  name: 'kali',
-  image: '../assets/img/items/kali.png',
+crystal_02 = Item.create(
+  name: 'crystal-02',
+  image: '../assets/img/items/crystal-02.png',
   size: 200
 )
-i14 = Item.create(
+candle_03 = Item.create(
+  name: 'candle-03',
+  image: '../assets/img/items/candle-03.png',
+  size: 200
+)
+candle_02 = Item.create(
+  name: 'candle-02',
+  image: '../assets/img/items/candle-02.png',
+  size: 200
+)
+crystal_03 = Item.create(
+  name: 'crystal-03',
+  image: '../assets/img/items/crystal-03.png',
+  size: 150
+)
+plant_01 = Item.create(
+  name: 'plant-01',
+  image: '../assets/img/items/plant-01.png',
+  size: 150
+)
+plant_03 = Item.create(
+  name: 'plant-03',
+  image: '../assets/img/items/plant-03.png',
+  size: 300
+)
+crystal_01 = Item.create(
+  name: 'crystal-01',
+  image: '../assets/img/items/crystal-01.png',
+  size: 200
+)
+candle_01 = Item.create(
+  name: 'candle-01',
+  image: '../assets/img/items/candle-01.png',
+  size: 100
+)
+pet_fizgig = Item.create(
+  name: 'pet-fizgig',
+  image: '../assets/img/items/pet-fizgig.png',
+  size: 300
+)
+plant_02 = Item.create(
+  name: 'plant-02',
+  image: '../assets/img/items/plant-02.png',
+  size: 300
+)
+food_05 = Item.create(
+  name: 'food-05',
+  image: '../assets/img/items/food-05.png',
+  size: 150
+)
+art_06 = Item.create(
+  name: 'art-06',
+  image: '../assets/img/items/art-06.png',
+  size: 700
+)
+art_07 = Item.create(
+  name: 'art-07',
+  image: '../assets/img/items/art-07.png',
+  size: 400
+)
+pet_pip = Item.create(
+  name: 'pet-pip',
+  image: '../assets/img/items/pet-pip.png',
+  size: 250
+)
+cards_tarot = Item.create(
+  name: 'cards-tarot',
+  image: '../assets/img/items/cards-tarot.png',
+  size: 350
+)
+pet_percy = Item.create(
+  name: 'pet-percy',
+  image: '../assets/img/items/pet-percy.png',
+  size: 300
+)
+food_04 = Item.create(
+  name: 'food-04',
+  image: '../assets/img/items/food-04.png',
+  size: 150
+)
+art_05 = Item.create(
+  name: 'art-05',
+  image: '../assets/img/items/art-05.png',
+  size: 300
+)
+art_04 = Item.create(
+  name: 'art-04',
+  image: '../assets/img/items/art-04.png',
+  size: 300
+)
+cat_02 = Item.create(
+  name: 'cat-02',
+  image: '../assets/img/items/cat-02.png',
+  size: 450
+)
+food_03 = Item.create(
+  name: 'food-03',
+  image: '../assets/img/items/food-03.png',
+  size: 250
+)
+pet_ling_ling = Item.create(
+  name: 'pet-ling-ling',
+  image: '../assets/img/items/pet-ling-ling.png',
+  size: 400
+)
+pet_merlin = Item.create(
+  name: 'pet-merlin',
+  image: '../assets/img/items/pet-merlin.png',
+  size: 200
+)
+art_01 = Item.create(
+  name: 'art-01',
+  image: '../assets/img/items/art-01.png',
+  size: 250
+)
+pet_luna = Item.create(
+  name: 'pet-luna',
+  image: '../assets/img/items/pet-luna.png',
+  size: 350
+)
+food_02 = Item.create(
+  name: 'food-02',
+  image: '../assets/img/items/food-02.png',
+  size: 250
+)
+cat_03 = Item.create(
+  name: 'cat-03',
+  image: '../assets/img/items/cat-03.png',
+  size: 400
+)
+cat_01 = Item.create(
   name: 'cat-01',
   image: '../assets/img/items/cat-01.png',
   size: 500
 )
-i15 = Item.create(
-  name: 'pip',
-  image: '../assets/img/items/pip.png',
+skull_cat = Item.create(
+  name: 'skull-cat',
+  image: '../assets/img/items/skull-cat.png',
   size: 250
 )
-i17 = Item.create(
-  name: 'fizgig',
-  image: '../assets/img/items/fizgig.png',
-  size: 300
-)
-i18 = Item.create(
-  name: 'percy',
-  image: '../assets/img/items/percy.png',
-  size: 200
-)
-i19 = Item.create(
-  name: 'haku-01',
-  image: '../assets/img/items/haku-01.png',
-  size: 700
-)
-i20 = Item.create(
-  name: 'haku-02',
-  image: '../assets/img/items/haku-02.png',
-  size: 700
-)
-i21 = Item.create(
-  name: 'jack',
-  image: '../assets/img/items/jack.png',
-  size: 700
-)
-i22 = Item.create(
-  name: 'adam',
-  image: '../assets/img/items/adam.png',
+art_03 = Item.create(
+  name: 'art-03',
+  image: '../assets/img/items/art-03.png',
   size: 400
 )
-i100 = Item.create(
-  name: 'peeby-01',
-  image: '../assets/img/items/peeby-01.png',
+art_02 = Item.create(
+  name: 'art-02',
+  image: '../assets/img/items/art-02.png',
+  size: 400
+)
+pet_jack = Item.create(
+  name: 'pet-jack',
+  image: '../assets/img/items/pet-jack.png',
+  size: 600
+)
+food_01 = Item.create(
+  name: 'food-01',
+  image: '../assets/img/items/food-01.png',
+  size: 400
+)
+fruit_01 = Item.create(
+  name: 'fruit-01',
+  image: '../assets/img/items/fruit-01.png',
+  size: 400
+)
+fruit_02 = Item.create(
+  name: 'fruit-02',
+  image: '../assets/img/items/fruit-02.png',
+  size: 250
+)
+kitsch_01 = Item.create(
+  name: 'kitsch-01',
+  image: '../assets/img/items/kitsch-01.png',
+  size: 400
+)
+pet_kali = Item.create(
+  name: 'pet-kali',
+  image: '../assets/img/items/pet-kali.png',
+  size: 200
+)
+cup_04 = Item.create(
+  name: 'cup-04',
+  image: '../assets/img/items/cup-04.png',
+  size: 400
+)
+pet_peeby_01 = Item.create(
+  name: 'pet-peeby-01',
+  image: '../assets/img/items/pet-peeby-01.png',
   size: 300
 )
-#######################################################
-o100 = Offering.create(
-  shrine: s1,
-  item: i100,
-  style: '{"top":"60%","left":"80%"}'
+cup_01 = Item.create(
+  name: 'cup-01',
+  image: '../assets/img/items/cup-01.png',
+  size: 400
+)
+cup_03 = Item.create(
+  name: 'cup-03',
+  image: '../assets/img/items/cup-03.png',
+  size: 400
+)
+pet_adam = Item.create(
+  name: 'pet-adam',
+  image: '../assets/img/items/pet-adam.png',
+  size: 400
+)
+cup_02 = Item.create(
+  name: 'cup-02',
+  image: '../assets/img/items/cup-02.png',
+  size: 400
 )

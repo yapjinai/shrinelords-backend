@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_13_204752) do
+ActiveRecord::Schema.define(version: 2018_11_08_194534) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,34 +22,25 @@ ActiveRecord::Schema.define(version: 2018_11_13_204752) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "doors", force: :cascade do |t|
-    t.string "closed_img"
-    t.string "open_img"
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "items", force: :cascade do |t|
     t.string "name"
     t.string "image"
+    t.integer "size"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "size"
   end
 
   create_table "offerings", force: :cascade do |t|
     t.integer "shrine_id"
     t.integer "item_id"
+    t.jsonb "style"
+    t.integer "z_index"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.jsonb "style"
-    t.integer "zIndex"
   end
 
   create_table "shrines", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "door_id"
     t.integer "back_id"
     t.integer "views"
     t.integer "idle_views"
