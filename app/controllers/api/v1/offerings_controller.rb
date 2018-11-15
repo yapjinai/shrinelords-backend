@@ -21,6 +21,7 @@ class Api::V1::OfferingsController < ApplicationController
 
   def update
     @Offering = Offering.find_by(id: params[:id])
+    # byebug
     @Offering.update_attributes(offering_params)
     if @Offering.save
       render json: @Offering, status: :ok

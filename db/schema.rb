@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2018_11_08_194534) do
     t.integer "shrine_id"
     t.integer "item_id"
     t.jsonb "style"
-    t.integer "z_index"
+    t.integer "zIndex"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
