@@ -72,26 +72,6 @@ s4 = Shrine.create(
 
 #######################################################
 
-pet_haku_01 = Item.create(
-  name: 'pet-haku-01',
-  image: '../assets/img/items/pet-haku-01.png',
-  size: 700
-)
-pet_blackjack = Item.create(
-  name: 'pet-blackjack',
-  image: '../assets/img/items/pet-blackjack.png',
-  size: 500
-)
-pet_haku_02 = Item.create(
-  name: 'pet-haku-02',
-  image: '../assets/img/items/pet-haku-02.png',
-  size: 700
-)
-candle_04 = Item.create(
-  name: 'candle-04',
-  image: '../assets/img/items/candle-04.png',
-  size: 400
-)
 plant_04 = Item.create(
   name: 'plant-04',
   image: '../assets/img/items/plant-04.png',
@@ -186,6 +166,26 @@ art_05 = Item.create(
   name: 'art-05',
   image: '../assets/img/items/art-05.png',
   size: 300
+)
+pet_haku_01 = Item.create(
+  name: 'pet-haku-01',
+  image: '../assets/img/items/pet-haku-01.png',
+  size: 700
+)
+pet_blackjack = Item.create(
+  name: 'pet-blackjack',
+  image: '../assets/img/items/pet-blackjack.png',
+  size: 500
+)
+pet_haku_02 = Item.create(
+  name: 'pet-haku-02',
+  image: '../assets/img/items/pet-haku-02.png',
+  size: 700
+)
+candle_04 = Item.create(
+  name: 'candle-04',
+  image: '../assets/img/items/candle-04.png',
+  size: 400
 )
 art_04 = Item.create(
   name: 'art-04',

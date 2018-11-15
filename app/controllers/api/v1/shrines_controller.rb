@@ -12,6 +12,10 @@ class Api::V1::ShrinesController < ApplicationController
 
   def create
     @Shrine = Shrine.new(shrine_params)
+    @Shrine.user_id = User.first.id
+    @Shrine.door = Door.first
+    @Shrine.views = 0
+    @Shrine.idle_views = 0
     if @Shrine.save
       render json: @Shrine, status: :ok
     else
@@ -38,7 +42,7 @@ class Api::V1::ShrinesController < ApplicationController
   private
 
   def shrine_params
-    params.require([:name, :back_id])
+    params.require(:shrine).permit([:name, :back_id])
   end
 
 end
