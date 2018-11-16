@@ -74,13 +74,13 @@ s4 = Shrine.create(
 
 plant_04 = Item.create(
   name: 'plant-04',
-  tags: 'plant mushroom fungus gray grey brown nature',
+  tags: 'plant nature mushroom fungus gray grey brown',
   image: '../assets/img/items/plant-04.png',
   size: 200
 )
 crystal_02 = Item.create(
   name: 'crystal-02',
-  tags: 'crystal rock quartz amethyst purple pink white clear glass',
+  tags: 'crystal nature rock quartz amethyst purple pink white clear glass',
   image: '../assets/img/items/crystal-02.png',
   size: 200
 )
@@ -98,25 +98,19 @@ candle_02 = Item.create(
 )
 crystal_03 = Item.create(
   name: 'crystal-03',
-  tags: 'crystals opal blue rock stone green',
+  tags: 'crystals nature opal blue rock stone green',
   image: '../assets/img/items/crystal-03.png',
-  size: 150
-)
-plant_01 = Item.create(
-  name: 'plant-01',
-  tags: 'plant flower yellow',
-  image: '../assets/img/items/plant-01.png',
   size: 150
 )
 plant_03 = Item.create(
   name: 'plant-03',
-  tags: 'plant flowers white roses bouquet',
+  tags: 'plant nature flowers white roses bouquet',
   image: '../assets/img/items/plant-03.png',
   size: 300
 )
 crystal_01 = Item.create(
   name: 'crystal-01',
-  tags: 'crystals blue green',
+  tags: 'crystals nature blue green',
   image: '../assets/img/items/crystal-01.png',
   size: 200
 )
@@ -128,13 +122,13 @@ candle_01 = Item.create(
 )
 pet_fizgig = Item.create(
   name: 'pet-fizgig',
-  tags: 'pet animal dog fizgig mariel',
+  tags: 'pet animal nature dog fizgig mariel',
   image: '../assets/img/items/pet-fizgig.png',
   size: 300
 )
 plant_02 = Item.create(
   name: 'plant-02',
-  tags: 'plant flowers bouquet roses red pink',
+  tags: 'plant nature flowers bouquet roses red pink',
   image: '../assets/img/items/plant-02.png',
   size: 300
 )
@@ -142,6 +136,12 @@ food_05 = Item.create(
   name: 'food-05',
   tags: 'food rice white chopsticks asian chinese korean ghosts',
   image: '../assets/img/items/food-05.png',
+  size: 150
+)
+plant_01 = Item.create(
+  name: 'plant-01',
+  tags: 'plant nature flower yellow',
+  image: '../assets/img/items/plant-01.png',
   size: 150
 )
 art_06 = Item.create(
@@ -158,7 +158,7 @@ art_07 = Item.create(
 )
 pet_pip = Item.create(
   name: 'pet-pip',
-  tags: 'pet animal cat pip alexandra',
+  tags: 'pet animal nature cat pip alexandra',
   image: '../assets/img/items/pet-pip.png',
   size: 250
 )
@@ -170,7 +170,7 @@ cards_tarot = Item.create(
 )
 pet_percy = Item.create(
   name: 'pet-percy',
-  tags: 'pet animal dog percy sean',
+  tags: 'pet animal nature dog percy sean',
   image: '../assets/img/items/pet-percy.png',
   size: 300
 )
@@ -188,19 +188,19 @@ art_05 = Item.create(
 )
 pet_haku_01 = Item.create(
   name: 'pet-haku-01',
-  tags: 'pet animal dog haku chris',
+  tags: 'pet animal nature dog haku chris',
   image: '../assets/img/items/pet-haku-01.png',
   size: 700
 )
 pet_blackjack = Item.create(
   name: 'pet-blackjack',
-  tags: 'pet animal dog blackjack johrten',
+  tags: 'pet animal nature dog blackjack johrten',
   image: '../assets/img/items/pet-blackjack.png',
   size: 500
 )
 pet_haku_02 = Item.create(
   name: 'pet-haku-02',
-  tags: 'pet animal dog haku chris',
+  tags: 'pet animal nature dog haku chris',
   image: '../assets/img/items/pet-haku-02.png',
   size: 700
 )
@@ -218,7 +218,7 @@ art_04 = Item.create(
 )
 cat_02 = Item.create(
   name: 'cat-02',
-  tags: 'cat animal white',
+  tags: 'cat animal nature white',
   image: '../assets/img/items/cat-02.png',
   size: 450
 )
@@ -230,13 +230,13 @@ food_03 = Item.create(
 )
 pet_ling_ling = Item.create(
   name: 'pet-ling-ling',
-  tags: 'pet animal dog lingling johnny',
+  tags: 'pet animal nature dog lingling johnny',
   image: '../assets/img/items/pet-ling-ling.png',
   size: 400
 )
 pet_merlin = Item.create(
   name: 'pet-merlin',
-  tags: 'pet animal dog merlin alexandra',
+  tags: 'pet animal nature dog merlin alexandra',
   image: '../assets/img/items/pet-merlin.png',
   size: 200
 )
@@ -248,7 +248,7 @@ art_01 = Item.create(
 )
 pet_luna = Item.create(
   name: 'pet-luna',
-  tags: 'pet animal dog luna daniel',
+  tags: 'pet animal nature dog luna daniel',
   image: '../assets/img/items/pet-luna.png',
   size: 350
 )
@@ -260,19 +260,19 @@ food_02 = Item.create(
 )
 cat_03 = Item.create(
   name: 'cat-03',
-  tags: 'cat animal black bat',
+  tags: 'cat animal nature black bat',
   image: '../assets/img/items/cat-03.png',
   size: 400
 )
 cat_01 = Item.create(
   name: 'cat-01',
-  tags: 'cat animal siamese gray grey brown',
+  tags: 'cat animal nature siamese gray grey brown',
   image: '../assets/img/items/cat-01.png',
   size: 500
 )
 skull_cat = Item.create(
   name: 'skull-cat',
-  tags: 'skull cat creepy spooky',
+  tags: 'skull nature cat creepy spooky',
   image: '../assets/img/items/skull-cat.png',
   size: 250
 )
@@ -290,7 +290,7 @@ art_02 = Item.create(
 )
 pet_jack = Item.create(
   name: 'pet-jack',
-  tags: 'pet animal dog jack jordan',
+  tags: 'pet animal nature dog jack jordan',
   image: '../assets/img/items/pet-jack.png',
   size: 600
 )
@@ -308,7 +308,7 @@ fruit_01 = Item.create(
 )
 fruit_02 = Item.create(
   name: 'fruit-02',
-  tags: 'fruit food oranges chinese asian red',
+  tags: 'fruit food nature oranges chinese asian red',
   image: '../assets/img/items/fruit-02.png',
   size: 250
 )
@@ -320,7 +320,7 @@ kitsch_01 = Item.create(
 )
 pet_kali = Item.create(
   name: 'pet-kali',
-  tags: 'pet animal dog kali olivier ollie',
+  tags: 'pet animal nature dog kali olivier ollie',
   image: '../assets/img/items/pet-kali.png',
   size: 200
 )
@@ -332,7 +332,7 @@ cup_04 = Item.create(
 )
 pet_peeby_01 = Item.create(
   name: 'pet-peeby-01',
-  tags: 'pet animal cat peeby jin ai gray white',
+  tags: 'pet animal nature cat peeby jin ai gray white',
   image: '../assets/img/items/pet-peeby-01.png',
   size: 300
 )
@@ -350,7 +350,7 @@ cup_03 = Item.create(
 )
 pet_adam = Item.create(
   name: 'pet-adam',
-  tags: 'pet animal dog adam christopher',
+  tags: 'pet animal nature dog adam christopher',
   image: '../assets/img/items/pet-adam.png',
   size: 400
 )
