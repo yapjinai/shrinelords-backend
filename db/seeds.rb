@@ -13,12 +13,12 @@ u1 = User.create(
 )
 
 b1 = Back.create(
-  name: 'default',
-  video: '../assets/video/bonfire.mp4'
-)
-b2 = Back.create(
   name: 'water',
   video: '../assets/video/sparkling_ocean_waves.mp4'
+)
+b2 = Back.create(
+  name: 'default',
+  video: '../assets/video/bonfire.mp4'
 )
 b3 = Back.create(
   name: 'waterfall',
@@ -43,29 +43,8 @@ b7 = Back.create(
 
 s1 = Shrine.create(
   user: u1,
-  back: b4,
-  name: 'default',
-  views: 0,
-  idle_views: 0
-)
-s2 = Shrine.create(
-  user: u1,
-  back: b2,
-  name: 'underwater',
-  views: 0,
-  idle_views: 0
-)
-s3 = Shrine.create(
-  user: u1,
-  back: b3,
-  name: "Your Mom's Shrine",
-  views: 0,
-  idle_views: 0
-)
-s4 = Shrine.create(
-  user: u1,
-  back: b5,
-  name: "Sean's Shrine",
+  back: b1,
+  name: 'waves',
   views: 0,
   idle_views: 0
 )
